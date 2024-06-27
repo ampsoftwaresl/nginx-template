@@ -35,7 +35,7 @@ services:
       - nginx-net
 
   nginx-ssl:
-    image: jrcs/letsencrypt-nginx-proxy-companion
+    image: nginxproxy/acme-companion:2.3
     restart: always
     container_name: nginx-ssl
     volumes:
